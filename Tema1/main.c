@@ -1,5 +1,12 @@
 #include<windows.h>
 
+/*Să se creeze un proiect în MSVC folosind limbajul C sau C++, în cadrul căruia 
+se va proiecta o aplicație care citește toate datele dintr-un fișier 
+al cărui path relativ este preluat de la intrarea standard 
+și le va afișa la ieșirea standard. 
+În cazul în care fișierul menționat nu există, se va afișa un mesaj de eroare. 
+Codul va respecta notația maghiară.*/
+
 int main()
 {
 	OFSTRUCT of;
@@ -7,8 +14,8 @@ int main()
 	HANDLE hStdin = GetStdHandle(STD_INPUT_HANDLE);
 	char chBuf[2048];
 	char chInput[128];
-	int iBytesRead = 0;
-	int iBytesRead2 = 0;
+	DWORD iBytesRead = 0;
+	DWORD iBytesRead2 = 0;
 	if (ReadConsole(hStdin, chInput, sizeof(chInput)-1, &iBytesRead, NULL))
 	{
 		if (iBytesRead >= 2 && chInput[iBytesRead - 1] == '\n' && chInput[iBytesRead-2]=='\r')

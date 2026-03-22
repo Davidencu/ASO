@@ -1,6 +1,8 @@
 #include<Windows.h>
 #include<stdio.h>
 
+//Să se citească toate subcheile unei chei (la alegere) din Registry și să se afișeze la ieșirea standard. 
+
 #define MAX_SIZE 1000
 
 void PrintSubKeys(HKEY *hKey)

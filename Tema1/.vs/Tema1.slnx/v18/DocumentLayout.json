@@ -30,8 +30,7 @@
               "RelativeToolTip": "test.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-15T19:22:50.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T19:22:50.949Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema1\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-03-15T19:15:56.951Z",
               "EditorCaption": ""
