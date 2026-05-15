@@ -12,7 +12,7 @@ void PrintAllServices(SC_HANDLE hSCManager)
 	if (EnumServicesStatusExA(hSCManager, SC_ENUM_PROCESS_INFO, SERVICE_WIN32, SERVICE_ACTIVE, NULL, 0, &dwBytesNeeded, &dwServiceCount, &dwResumeHandle, "") == 0)
 	{
 		DWORD err = GetLastError();
-		if(err != ERROR_MORE_DATA) {
+		if (err != ERROR_MORE_DATA) {
 			printf("EnumServicesStatusExA failed with error code: %d\n", err);
 			return;
 		}
@@ -24,7 +24,7 @@ void PrintAllServices(SC_HANDLE hSCManager)
 		free(buf);
 		return;
 	}
-	if (EnumServicesStatusExA(hSCManager, SC_ENUM_PROCESS_INFO, SERVICE_WIN32, SERVICE_ACTIVE, buf, dwBytesNeeded, &dwBytesNeeded, &dwServiceCount,&dwResumeHandle, "") == 0)
+	if (EnumServicesStatusExA(hSCManager, SC_ENUM_PROCESS_INFO, SERVICE_WIN32, SERVICE_ACTIVE, buf, dwBytesNeeded, &dwBytesNeeded, &dwServiceCount, &dwResumeHandle, "") == 0)
 	{
 		printf("EnumServicesStatusExA failed with error code: %d\n", GetLastError());
 		free(buf);
@@ -33,7 +33,7 @@ void PrintAllServices(SC_HANDLE hSCManager)
 	ENUM_SERVICE_STATUS_PROCESSA* services = (ENUM_SERVICE_STATUS_PROCESSA*)buf;
 	for (DWORD i = 0; i < dwServiceCount; i++)
 	{
-		printf("%d\. Service Name: %s, Display Name: %s\n", i+1, services[i].lpServiceName, services[i].lpDisplayName);
+		printf("%d\. Service Name: %s, Display Name: %s\n", i + 1, services[i].lpServiceName, services[i].lpDisplayName);
 	}
 	free(buf);
 }

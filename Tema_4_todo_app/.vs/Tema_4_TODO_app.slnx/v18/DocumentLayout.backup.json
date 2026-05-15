@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\views\\todo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\views\\todo\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\views\\todo\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|c:\\users\\david\\onedrive\\desktop\\aso\\tema_4_todo_app\\todoapp\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74B3E000-0E0D-43EF-B5F6-88A5CE724CB6}|Tema_4_TODO_app.csproj|solutionrelative:todoapp\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "TodoApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:36:24.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Views\\Todo\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TodoApp\\Views\\Todo\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Views\\Todo\\Edit.cshtml",
+              "RelativeToolTip": "TodoApp\\Views\\Todo\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T16:27:27.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Views\\Todo\\Index.cshtml",
+              "RelativeDocumentMoniker": "TodoApp\\Views\\Todo\\Index.cshtml",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Views\\Todo\\Index.cshtml",
+              "RelativeToolTip": "TodoApp\\Views\\Todo\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwEQAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T16:23:46.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TodoController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Controllers\\TodoController.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Controllers\\TodoController.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Controllers\\TodoController.cs",
+              "RelativeToolTip": "TodoApp\\Controllers\\TodoController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:20:34.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TodoApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TodoApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T16:22:05.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Program.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Program.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Program.cs",
+              "RelativeToolTip": "TodoApp\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:16:00.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "TodoApp\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:15:38.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "TodoApp\\Models\\TodoItem.cs",
+              "ToolTip": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\Models\\TodoItem.cs",
+              "RelativeToolTip": "TodoApp\\Models\\TodoItem.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T16:14:17.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

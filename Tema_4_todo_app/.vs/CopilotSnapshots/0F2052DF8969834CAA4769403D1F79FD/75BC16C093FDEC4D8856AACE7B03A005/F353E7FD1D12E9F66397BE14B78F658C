@@ -1,0 +1,60 @@
+﻿@* Views/Todo/Index.cshtml *@
+@model IEnumerable<TodoApp.Models.TodoItem>
+@{
+    ViewData["Title"] = "My Tasks";
+    var filter = ViewBag.Filter as string ?? "all";
+}
+ 
+<h2 class="my-4">My Tasks</h2>
+ 
+@* ── Filter buttons ───────────────────────────── *@
+<div class="btn-group mb-3">
+    @foreach (var f in new[] { "all", "active", "completed" })
+    {
+        var active = filter == f ? "btn-primary" : "btn-outline-primary";
+        <a href="?filter=@f" class="btn @active btn-sm text-capitalize">@f</a>
+    }
+</div>
+ 
+@* ── Add new task form ─────────────────────────── *@
+<form asp-action="Create" method="post" class="d-flex gap-2 mb-4">
+    @Html.AntiForgeryToken()
+    <input name="Title" class="form-control" placeholder="What needs to be done?" required />
+    <button type="submit" class="btn btn-success px-4">Add</button>
+</form>
+ 
+@* ── Task list ─────────────────────────────────── *@
+@if (!Model.Any())
+{
+    <p class="text-muted">No tasks here. 🎉</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item d-flex align-items-center gap-3">
+ 
+                @* Toggle checkbox *@
+                <form asp-action="Toggle" asp-route-id="@item.Id" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-link p-0">
+                        @(item.IsCompleted ? "✅" : "⬜")
+                    </button>
+                </form>
+ 
+                @* Task title *@
+                <span class="flex-grow-1 @(item.IsCompleted ? "text-decoration-line-through text-muted" : "")">
+                    @item.Title
+                </span>
+ 
+                @* Delete button *@
+                <form asp-action="Delete" asp-route-id="@item.Id" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-outline-danger btn-sm">🗑</button>
+                </form>
+ 
+            </li>
+        }
+    </ul>
+}

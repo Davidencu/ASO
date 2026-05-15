@@ -1,0 +1,10 @@
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.csproj.AssemblyReference.cache
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.AssemblyInfoInputs.cache
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.AssemblyInfo.cs
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.csproj.CoreCompileInputs.cache
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.RazorAssemblyInfo.cache
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.RazorAssemblyInfo.cs
+C:\Users\david\OneDrive\Desktop\ASO\Tema_4_TODO_app\obj\Debug\net10.0\Tema_4_TODO_app.sourcelink.json

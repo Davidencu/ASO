@@ -1,0 +1,89 @@
+﻿// Controllers/TodoController.cs
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using TodoApp.Data;
+using TodoApp.Models;
+
+namespace TodoApp.Controllers;
+
+public class TodoController : Controller
+{
+    private readonly AppDbContext _db;
+
+    public TodoController(AppDbContext db) => _db = db;
+
+    // GET /Todo  or  /Todo?filter=active|completed
+    public async Task<IActionResult> Index(string? filter)
+    {
+        var query = _db.TodoItems.AsQueryable();
+
+        query = filter switch
+        {
+            "active" => query.Where(t => !t.IsCompleted),
+            "completed" => query.Where(t => t.IsCompleted),
+            _ => query
+        };
+
+        ViewBag.Filter = filter ?? "all";
+        return View(await query.OrderByDescending(t => t.CreatedAt).ToListAsync());
+    }
+
+    // POST /Todo/Create
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(TodoItem item)
+    {
+        if (!ModelState.IsValid) return RedirectToAction(nameof(Index));
+        _db.TodoItems.Add(item);
+        await _db.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    // POST /Todo/Toggle/5
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Toggle(int id)
+    {
+        var item = await _db.TodoItems.FindAsync(id);
+        if (item is null) return NotFound();
+        item.IsCompleted = !item.IsCompleted;
+        await _db.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    // POST /Todo/Delete/5
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var item = await _db.TodoItems.FindAsync(id);
+        if (item is not null)
+        {
+            _db.TodoItems.Remove(item);
+            await _db.SaveChangesAsync();
+        }
+        return RedirectToAction(nameof(Index));
+    }
+
+    // GET /Todo/Edit/5
+    public async Task<IActionResult> Edit(int id)
+    {
+        var item = await _db.TodoItems.FindAsync(id);
+        if (item is null) return NotFound();
+        return View(item);
+    }
+
+    // POST /Todo/Edit
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(TodoItem item)
+    {
+        if (!ModelState.IsValid) return View(item);
+        var existingItem = await _db.TodoItems.FindAsync(item.Id);
+        if (existingItem is null) return NotFound();
+        existingItem.Title = item.Title;
+        existingItem.IsCompleted = item.IsCompleted;
+        await _db.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+}
