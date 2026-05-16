@@ -64,6 +64,42 @@ Pages/
  Error.cshtml.cs
  Index.cshtml.cs
  Privacy.cshtml.cs
+TodoApp/Areas/Identity/
+ Data/TodoAppIdentityDbContext.cs
+ Pages/Account/
+  AccessDenied.cshtml.cs
+  ConfirmEmail.cshtml.cs
+  ConfirmEmailChange.cshtml.cs
+  ExternalLogin.cshtml.cs
+  ForgotPassword.cshtml.cs
+  ForgotPasswordConfirmation.cshtml.cs
+  Lockout.cshtml.cs
+  Login.cshtml.cs
+  LoginWith2fa.cshtml.cs
+  LoginWithRecoveryCode.cshtml.cs
+  Logout.cshtml.cs
+  Manage/
+   ChangePassword.cshtml.cs
+   DeletePersonalData.cshtml.cs
+   Disable2fa.cshtml.cs
+   DownloadPersonalData.cshtml.cs
+   Email.cshtml.cs
+   EnableAuthenticator.cshtml.cs
+   ExternalLogins.cshtml.cs
+   GenerateRecoveryCodes.cshtml.cs
+   Index.cshtml.cs
+   ManageNavPages.cs
+   PersonalData.cshtml.cs
+   ResetAuthenticator.cshtml.cs
+   SetPassword.cshtml.cs
+   ShowRecoveryCodes.cshtml.cs
+   TwoFactorAuthentication.cshtml.cs
+  Register.cshtml.cs
+  RegisterConfirmation.cshtml.cs
+  ResendEmailConfirmation.cshtml.cs
+  ResetPassword.cshtml.cs
+  ResetPasswordConfirmation.cshtml.cs
+ Pages/Error.cshtml.cs
 TodoApp/
  Controllers/TodoController.cs
  Data/AppDbContext.cs
@@ -74,6 +110,8 @@ TodoApp/
   20260515084052_AddDueDateColumn.Designer.cs
   20260515085048_AddPriorityColumn.cs
   20260515085048_AddPriorityColumn.Designer.cs
+  20260515090339_AddIdentityAndUserId.cs
+  20260515090339_AddIdentityAndUserId.Designer.cs
   AppDbContextModelSnapshot.cs
  Models/
   ErrorViewModel.cs
@@ -457,6 +495,49 @@ Pages/
   _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
+TodoApp/Areas/Identity/Pages/Account/
+ AccessDenied.cshtml
+ ConfirmEmail.cshtml
+ ConfirmEmailChange.cshtml
+ ExternalLogin.cshtml
+ ForgotPassword.cshtml
+ ForgotPasswordConfirmation.cshtml
+ Lockout.cshtml
+ Login.cshtml
+ LoginWith2fa.cshtml
+ LoginWithRecoveryCode.cshtml
+ Logout.cshtml
+ Manage/
+  ChangePassword.cshtml
+  DeletePersonalData.cshtml
+  Disable2fa.cshtml
+  DownloadPersonalData.cshtml
+  Email.cshtml
+  EnableAuthenticator.cshtml
+  ExternalLogins.cshtml
+  GenerateRecoveryCodes.cshtml
+  Index.cshtml
+  PersonalData.cshtml
+  ResetAuthenticator.cshtml
+  SetPassword.cshtml
+  ShowRecoveryCodes.cshtml
+  TwoFactorAuthentication.cshtml
+  _Layout.cshtml
+  _ManageNav.cshtml
+  _StatusMessage.cshtml
+  _ViewImports.cshtml
+ Register.cshtml
+ RegisterConfirmation.cshtml
+ ResendEmailConfirmation.cshtml
+ ResetPassword.cshtml
+ ResetPasswordConfirmation.cshtml
+ _StatusMessage.cshtml
+ _ViewImports.cshtml
+TodoApp/Areas/Identity/Pages/
+ Error.cshtml
+ _ValidationScriptsPartial.cshtml
+ _ViewImports.cshtml
+ _ViewStart.cshtml
 TodoApp/Views/Home/
  Index.cshtml
  Privacy.cshtml
@@ -468,6 +549,10 @@ TodoApp/Views/Todo/
  Edit.cshtml
  Index.cshtml
 TodoApp/Views/
+ _ViewImports.cshtml
+ _ViewStart.cshtml
+TodoApp/
+ _LoginPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
 
@@ -481,6 +566,49 @@ Pages/
   _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
+TodoApp/Areas/Identity/Pages/Account/
+ AccessDenied.cshtml
+ ConfirmEmail.cshtml
+ ConfirmEmailChange.cshtml
+ ExternalLogin.cshtml
+ ForgotPassword.cshtml
+ ForgotPasswordConfirmation.cshtml
+ Lockout.cshtml
+ Login.cshtml
+ LoginWith2fa.cshtml
+ LoginWithRecoveryCode.cshtml
+ Logout.cshtml
+ Manage/
+  ChangePassword.cshtml
+  DeletePersonalData.cshtml
+  Disable2fa.cshtml
+  DownloadPersonalData.cshtml
+  Email.cshtml
+  EnableAuthenticator.cshtml
+  ExternalLogins.cshtml
+  GenerateRecoveryCodes.cshtml
+  Index.cshtml
+  PersonalData.cshtml
+  ResetAuthenticator.cshtml
+  SetPassword.cshtml
+  ShowRecoveryCodes.cshtml
+  TwoFactorAuthentication.cshtml
+  _Layout.cshtml
+  _ManageNav.cshtml
+  _StatusMessage.cshtml
+  _ViewImports.cshtml
+ Register.cshtml
+ RegisterConfirmation.cshtml
+ ResendEmailConfirmation.cshtml
+ ResetPassword.cshtml
+ ResetPasswordConfirmation.cshtml
+ _StatusMessage.cshtml
+ _ViewImports.cshtml
+TodoApp/Areas/Identity/Pages/
+ Error.cshtml
+ _ValidationScriptsPartial.cshtml
+ _ViewImports.cshtml
+ _ViewStart.cshtml
 TodoApp/Views/Home/
  Index.cshtml
  Privacy.cshtml
@@ -492,5 +620,9 @@ TodoApp/Views/Todo/
  Edit.cshtml
  Index.cshtml
 TodoApp/Views/
+ _ViewImports.cshtml
+ _ViewStart.cshtml
+TodoApp/
+ _LoginPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "AGKql48e3W0=",
+  "dgSpecHash": "JrUfdKPs5ng=",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\OneDrive\\Desktop\\ASO\\Tema_4_todo_app\\TodoApp\\TodoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.8.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\10.0.8\\microsoft.aspnetcore.identity.ui.10.0.8.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.11.0\\microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.codeanalysis.common\\5.0.0\\microsoft.codeanalysis.common.5.0.0.nupkg.sha512",
@@ -22,6 +24,7 @@
     "C:\\Users\\david\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\10.0.8\\microsoft.entityframeworkcore.sqlite.core.10.0.8.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.8\\microsoft.entityframeworkcore.tools.10.0.8.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.8\\microsoft.extensions.dependencymodel.10.0.8.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\10.0.8\\microsoft.extensions.fileproviders.embedded.10.0.8.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",

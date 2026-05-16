@@ -18,4 +18,6 @@ public class TodoItem
     public DateTime? DueDate { get; set; }
 
     public Priority Priority { get; set; } = Priority.Medium;
+
+    public string UserId { get; set; } = string.Empty;
 }

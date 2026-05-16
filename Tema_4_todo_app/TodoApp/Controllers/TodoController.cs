@@ -1,21 +1,29 @@
-﻿// Controllers/TodoController.cs
+// Controllers/TodoController.cs
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using TodoApp.Data;
 using TodoApp.Models;
 
 namespace TodoApp.Controllers;
 
+[Authorize]
 public class TodoController : Controller
 {
     private readonly AppDbContext _db;
 
     public TodoController(AppDbContext db) => _db = db;
 
+    private string CurrentUserId =>
+        User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+
     // GET /Todo  or  /Todo?filter=active|completed
     public async Task<IActionResult> Index(string? filter)
     {
-        var query = _db.TodoItems.AsQueryable();
+        var query = _db.TodoItems
+            .Where(t => t.UserId == CurrentUserId)
+            .AsQueryable();
 
         query = filter switch
         {
@@ -34,6 +42,7 @@ public class TodoController : Controller
     public async Task<IActionResult> Create(TodoItem item)
     {
         if (!ModelState.IsValid) return RedirectToAction(nameof(Index));
+        item.UserId = CurrentUserId;
         _db.TodoItems.Add(item);
         await _db.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
@@ -44,7 +53,8 @@ public class TodoController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Toggle(int id)
     {
-        var item = await _db.TodoItems.FindAsync(id);
+        var item = await _db.TodoItems
+            .FirstOrDefaultAsync(t => t.Id == id && t.UserId == CurrentUserId);
         if (item is null) return NotFound();
         item.IsCompleted = !item.IsCompleted;
         await _db.SaveChangesAsync();
@@ -56,7 +66,8 @@ public class TodoController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        var item = await _db.TodoItems.FindAsync(id);
+        var item = await _db.TodoItems
+            .FirstOrDefaultAsync(t => t.Id == id && t.UserId == CurrentUserId);
         if (item is not null)
         {
             _db.TodoItems.Remove(item);
@@ -68,7 +79,8 @@ public class TodoController : Controller
     // GET /Todo/Edit/5
     public async Task<IActionResult> Edit(int id)
     {
-        var item = await _db.TodoItems.FindAsync(id);
+        var item = await _db.TodoItems
+            .FirstOrDefaultAsync(t => t.Id == id && t.UserId == CurrentUserId);
         if (item is null) return NotFound();
         return View(item);
     }
@@ -79,7 +91,8 @@ public class TodoController : Controller
     public async Task<IActionResult> Edit(TodoItem item)
     {
         if (!ModelState.IsValid) return View(item);
-        var existingItem = await _db.TodoItems.FindAsync(item.Id);
+        var existingItem = await _db.TodoItems
+            .FirstOrDefaultAsync(t => t.Id == item.Id && t.UserId == CurrentUserId);
         if (existingItem is null) return NotFound();
         existingItem.Title = item.Title;
         existingItem.IsCompleted = item.IsCompleted;
