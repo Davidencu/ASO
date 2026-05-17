@@ -14,7 +14,7 @@ public class TodosControllerTests
         return (new TodosController(db).WithUser(userId), db);
     }
 
-    // ── GetAll ─────────────────────────────────────────────────────────────
+    // GetAll
 
     [Fact]
     public async Task GetAll_ReturnsOnlyCurrentUserItems()
@@ -64,7 +64,7 @@ public class TodosControllerTests
         Assert.True(items[0].IsCompleted);
     }
 
-    // ── GetById ────────────────────────────────────────────────────────────
+    // GetById
 
     [Fact]
     public async Task GetById_ExistingItem_ReturnsIt()
@@ -101,7 +101,7 @@ public class TodosControllerTests
         Assert.IsType<NotFoundResult>(result.Result);
     }
 
-    // ── Create ─────────────────────────────────────────────────────────────
+    // Create
 
     [Fact]
     public async Task Create_ValidRequest_Returns201WithItem()
@@ -127,7 +127,7 @@ public class TodosControllerTests
         Assert.Equal("owner-99", db.TodoItems.Single().UserId);
     }
 
-    // ── Update ─────────────────────────────────────────────────────────────
+    // Update
 
     [Fact]
     public async Task Update_ExistingItem_ReturnsUpdatedItem()
@@ -167,7 +167,7 @@ public class TodosControllerTests
         Assert.IsType<NotFoundResult>(result.Result);
     }
 
-    // ── Toggle ─────────────────────────────────────────────────────────────
+    // Toggle 
 
     [Fact]
     public async Task Toggle_FlipsIsCompleted()
@@ -205,7 +205,7 @@ public class TodosControllerTests
         Assert.IsType<NotFoundResult>(result.Result);
     }
 
-    // ── Delete ─────────────────────────────────────────────────────────────
+    // Delete
 
     [Fact]
     public async Task Delete_ExistingItem_Returns204AndRemoves()
