@@ -14,7 +14,7 @@ public class TodoControllerTests
         return (new TodoController(db).WithUser(userId), db);
     }
 
-    // ── Index ──────────────────────────────────────────────────────────────
+    // Index
 
     [Fact]
     public async Task Index_ReturnsOnlyCurrentUserItems()
@@ -79,7 +79,7 @@ public class TodoControllerTests
         Assert.Equal(2, items.Count);
     }
 
-    // ── Create ─────────────────────────────────────────────────────────────
+    // Create
 
     [Fact]
     public async Task Create_ValidItem_SavesWithUserIdAndRedirects()
@@ -106,7 +106,7 @@ public class TodoControllerTests
         Assert.Empty(db.TodoItems);
     }
 
-    // ── Toggle ─────────────────────────────────────────────────────────────
+    // Toggle
 
     [Fact]
     public async Task Toggle_ExistingItem_FlipsIsCompleted()
@@ -155,7 +155,7 @@ public class TodoControllerTests
         Assert.IsType<NotFoundResult>(result);
     }
 
-    // ── Delete ─────────────────────────────────────────────────────────────
+    // Delete
 
     [Fact]
     public async Task Delete_ExistingItem_RemovesAndRedirects()
@@ -192,7 +192,7 @@ public class TodoControllerTests
         Assert.Single(db.TodoItems);
     }
 
-    // ── Edit ───────────────────────────────────────────────────────────────
+    // Edit
 
     [Fact]
     public async Task Edit_Get_ReturnsViewWithCorrectItem()
